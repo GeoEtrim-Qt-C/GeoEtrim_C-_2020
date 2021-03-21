@@ -1,6 +1,8 @@
 #ifndef GEOTRANSFORM_H
 #define GEOTRANSFORM_H
 
+#include "txtread.h"
+
 #include <QMainWindow>
 
 namespace Ui {
@@ -17,6 +19,12 @@ public:
 
 private:
     Ui::GeoTransform *ui;
+    void ListFill();
+
+    txtRead txt;
+
+    QList<QStringList>list;
+
 };
 
 #endif // GEOTRANSFORM_H

@@ -2,6 +2,9 @@ QT       += core gui
 QT += xml
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+
+LIBS += -lOpenGL32
+
 CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
@@ -20,13 +23,17 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     geotransform.cpp \
-    gcp_icp_collections.cpp
+    gcp_icp_collections.cpp \
+    opengl.cpp \
+    txtread.cpp
 
 HEADERS += \
     canvasnew.h \
     mainwindow.h \
     geotransform.h \
-    gcp_icp_collections.h
+    gcp_icp_collections.h \
+    opengl.h \
+    txtread.h
 
 FORMS += \
     canvasnew.ui \

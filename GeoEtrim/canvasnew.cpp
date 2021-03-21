@@ -19,8 +19,6 @@ canvasnew::canvasnew(QWidget *parent) :
     ui->lineEdit_2->setPlaceholderText("Name");
     ui->textEdit->setPlaceholderText("Information");
 
-
-
 }
 
 canvasnew::~canvasnew()

@@ -52,29 +52,25 @@ void MainWindow::setnodeadd(QString file_name)
     QStandardItem* item3 = new QStandardItem(QIcon("movietape_mini.png"), "3 third item");
     QStandardItem* item4 = new QStandardItem("4 forth item");
     */
-
     model->appendRow(item0);
     /*
     item0->appendRow(item3);
     item0->appendRow(item4);
     model->appendRow(item1);
     */
-
     ui->treeView->setModel(model);
 
 }
 
 void MainWindow::on_action_new_triggered()
 {
-
     canvas.show();
-
 }
 
 
 void MainWindow::on_actionOpen_Project_triggered()
 {
-setnodeadd("yunus");
+setnodeadd("yunus:)");
 }
 
 void MainWindow::on_actionGeoTransform_triggered()
